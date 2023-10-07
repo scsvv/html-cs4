@@ -1,0 +1,20 @@
+body {
+    color: #fff;
+    background-color: #000;
+}
+
+a {
+    color: white;
+}
+
+span {
+    float: right;
+}
+
+h1 {
+    font-size: 124px;
+}
+
+main {
+    text-align: center;
+}
