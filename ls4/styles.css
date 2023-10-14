@@ -1,0 +1,18 @@
+div {
+    text-align: center;
+    display: inline-block;
+
+    border: 1px solid green;
+}
+p {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+img {
+    width: 200px;
+}
+section {
+    text-align: center;
+}
+
