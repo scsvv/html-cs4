@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #000;
+    font-weight: 400;
+}
+body {
+    background-color: #fff;
+}
+h1, 
+h2.title {
+    font-size: 43px;
+}
+a {
+    text-decoration: none;
+}
+.optional {
+    color: #A0A0A0;
+    text-align: center;
+}
+
+
+/* Nav section */
+nav * {
+    display: inline-block;
+}
+nav {
+    text-align: center;
+    padding: 29px 50px;
+    text-transform: uppercase;
+}
+nav > ul {
+    float: left;
+}
+nav > a {
+    float: right;
+    font-size: 14px;
+}
+.links {
+    margin-right: 24px;
+}
+
+/* header header */
+header {
+    min-height: 504px;
+    background-image: url('./images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content {
+    text-align: center;
+    padding-top: 188px;
+}
+div.content > * {
+    color: #fff;
+}
+.content > p {
+    font-size: 15px;
+    margin-bottom: 28px;
+}
+header h1 {
+    margin-bottom: 12px;
+}
+
+/**/
+main {
+    padding-top: 80px;
+}
+.overlay {
+    padding: 0px 50px;
+}
+.inspares {
+    text-align: center;
+}
+.inspares > .title {
+    margin-bottom: 23px;
+}
+.inspares p {
+    font-size: 14px;
+}
+
