@@ -15,6 +15,9 @@ h1,
 h2.title {
     font-size: 43px;
 }
+h2 {
+    font-size: 33px;
+}
 a {
     text-decoration: none;
 }
@@ -25,19 +28,18 @@ a {
 
 
 /* Nav section */
-nav * {
+nav ul li {
     display: inline-block;
 }
 nav {
     text-align: center;
     padding: 29px 50px;
     text-transform: uppercase;
-}
-nav > ul {
-    float: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 nav > a {
-    float: right;
     font-size: 14px;
 }
 .links {
@@ -74,6 +76,7 @@ main {
 .overlay {
     padding: 0px 50px;
 }
+/* */ 
 .inspares {
     text-align: center;
 }
@@ -84,3 +87,102 @@ main {
     font-size: 14px;
 }
 
+.configurations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 81px;
+    gap: 25px;
+    padding-bottom: 130px;
+}
+.configuration {
+    /* display: inline-block; */
+    max-width: 658px;
+    width: 45%;
+    min-width: 329px;
+}
+
+.configuration img {
+    max-width: 658px;
+    width: 100%;
+    min-width: 329px;
+}
+
+.configuration h3 {
+    font-size: 27px;
+    margin-top: 48px;
+    margin-bottom: 23px;
+}
+
+/* */ 
+
+.featured {
+    text-align: center;
+    overflow: hidden;
+}
+
+.featured p.optional {
+    margin-top: 13px;
+    margin-bottom: 52px;
+}
+.dots {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+.dot {
+    width: 7px;
+    height: 7px;
+    background-color: #000;
+}
+
+.slider {
+    padding-top: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 85px;
+    display: flex;
+    text-align: left;
+    gap: 25px;
+    overflow-x: scroll;
+}
+.slider > .card * {
+    color: #A0A0A0;
+} 
+.slider > .card {
+    color: #A0A0A0;
+}
+.card img {
+    margin-bottom: 23px;
+}
+.card h4 {
+    color: #A0A0A0;
+    font-size: 12px;
+}
+
+.home-office {
+    min-height: 504px;
+    background-color: #000;
+    background-image: url("./images/Home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 116px;
+}
+
+.home-office * {
+    color: #fff;
+}
+.home-office h2 {
+    font-size: 66px;
+    margin-bottom: 13px;
+}
+
+.home-office p {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
