@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+    --white: #fff;
+    --black: #000;
+    --optinal: #E8244F;
+    --xl: 1440px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    text-transform: inherit;
+}
+
+.wrapper {
+    max-width: var(--xl);
+    padding: 0 72px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 114px;
+    color: inherit;
+    margin: 0;
+}
+.secondary_title {
+    font-size: 46px;
+    color: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+div.navigation {
+    background-color: var(--black);
+}   
+.nav {
+    max-width: var(--xl);
+    margin: 0 auto;
+    padding: 34px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation > .nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 34px;
+    color: var(--white);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* * Header */
+.banner {
+    background-color: var(--black);
+    padding-bottom: 80px;
+    color: var(--white);
+}
+
+.banner > .wrapper {
+    min-height: calc(100vh - 171px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url('../images/shape.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.banner .motto {
+    position: absolute;
+    left: 72px;
+    bottom: 0;
+    width: 509px;
+    text-align: left;
+    font-size: 16px;
+}
+.banner .sign {
+    position: absolute;
+    right: 72px;
+    bottom: 9px;
+    width: 173px;
+    text-align: left; 
+    font-size: 20px;
+}
+.banner .sign span {
+    color: var(--white);
+    opacity: 0.4;
+    font-size: 11px;
+}
+
+/* * MAIN */ 
+
+.mini_title {
+    color: #E8244F;
+    font-size: 10px;
+    line-height: 34.171px; 
+    letter-spacing: 0.44px;
+    text-transform: uppercase;
+}
+.main {
+    padding-top: 86px;
+    color: var(--black);
+}
+
+.help_list {
+    padding-top: 89px;
+    padding-bottom: 105px;
+}
+.help_item {
+    display: grid;
+    grid-template-columns: 4fr 3fr 1fr;
+    margin-bottom: 83px;
+}
+
+.help_item p {
+    display: flex;
+    align-items: center;
+} 
+.help_item button {
+    background-color: #00000000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+.story {
+    grid-template-areas: 
+    "title title title photo1"
+    "optinal optinal photo2 photo3"
+    "empty photo4 photo5 photo6"
+    "photo7 photo8 motto motto";
+}
+
+.story h2 {
+    
+}
