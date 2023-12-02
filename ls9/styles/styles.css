@@ -12,7 +12,27 @@ a {
     font-size: inherit;
     text-transform: inherit;
 }
-
+figure img {
+    max-width: 100%;
+    width: min-content;
+    object-fit: contain;
+}
+figcaption {
+    margin-top: 13px;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+}
+pre {
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+}
+address {
+    color: var(--white);
+    font-size: 20px;
+}
 .wrapper {
     max-width: var(--xl);
     padding: 0 72px;
@@ -141,6 +161,10 @@ div.navigation {
 }
 
 .story {
+    display: grid;
+    gap: 30px;
+    row-gap: 43px;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
     "title title title photo1"
     "optinal optinal photo2 photo3"
@@ -149,5 +173,184 @@ div.navigation {
 }
 
 .story h2 {
-    
+    grid-area: title;
+}
+.optinal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 9%;
+    font-family: 18px;
+    grid-area: optinal;
+}
+.photo1 {
+    grid-area: photo1;
+}
+.photo2 {
+    grid-area: photo2;
+}
+.photo3 {
+    grid-area: photo3;
+}
+.photo3 {
+    grid-area: photo3;
+}
+.photo4 {
+    grid-area: photo4;
+}
+.photo5 {
+    grid-area: photo5;
+}
+.photo6 {
+    grid-area: photo6;
+}
+.story div.motto, 
+.covers div.motto{
+    grid-area: motto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+.sponsorships {
+    padding-top: 135px;
+    padding-bottom: 115px;
+}
+.sponsors {
+    padding-top: 65px;
+    display: grid;
+    row-gap: 50px;
+    grid-template-columns: repeat(5, 1fr);
+}
+.carusel {
+    background-color: var(--black);
+    min-height: 844px;
+}
+
+.covers {
+    padding: 122px;
+    padding-bottom: 102px;
+    display: grid;
+    gap: 30px;
+    row-gap: 43px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "cover1 title title title"
+    "cover2 cover3 cover4 cover5"
+    "motto motto cover6 cover7";
+}
+.caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    grid-area: title;
+    padding-bottom: 46px;
+}
+.caption h2 {
+    margin-bottom: 32px;
+}
+.caption p {
+    font-size: 20px;
+}
+figure.cover figcaption {
+    margin-top: 4px;
+    font-size: 12px;
+}
+figure.cover img {
+    margin-bottom: 16px;
+}
+.cover1 {
+    grid-area: cover1;
+}
+.cover2 {
+    grid-area: cover2;
+}
+.cover3 {
+    grid-area: cover3;
+}
+.cover4 {
+    grid-area: cover4;
+}
+.cover5 {
+    grid-area: cover5;
+}
+.cover6 {
+    grid-area: cover6;
+}
+.cover7 {
+    grid-area: cover7;
+}
+.ceo {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 114px;
+    gap: 70px;
+}
+.ceo1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px   ;
+    font-size: 46px;
+}
+.ceo2 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    font-size: 20px;
+}
+.ceo .sign {
+    display: flex;
+} 
+.footer {
+    background-color: var(--black);
+    color: var(--optinal);
+    padding-top: 97px;
+    padding-bottom: 43px;
+}
+.wrapper .top {
+    margin-bottom: 63px;
+}
+.footer p {
+    color: var(--white);   
+    font-size: 10px;
+}
+.footer span {
+    color: var(--white);
+    opacity: .40;
+    font-size: 12px;
+}
+
+.footer a {
+    color: var(--white);
+    font-size: 65px;
+}
+.footer .links {
+    margin-bottom: 144px;
+}
+.middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 229px;
+}
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.politics {
+    display: flex;
+    gap: 86px;
+}
+.bye {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 45px 45px;
+    font-size: 46px;
+    text-align: center;
 }
