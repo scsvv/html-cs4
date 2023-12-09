@@ -4,6 +4,8 @@
     --black: #000;
     --optinal: #E8244F;
     --xl: 1440px;
+    --md: 975px;
+    --sm: 650px;
 }
 
 a {
@@ -223,6 +225,9 @@ div.navigation {
     row-gap: 50px;
     grid-template-columns: repeat(5, 1fr);
 }
+.sponsors img {
+    max-width: 100%;
+}
 .carusel {
     background-color: var(--black);
     min-height: 844px;
@@ -353,4 +358,171 @@ figure.cover img {
     padding: 45px 45px;
     font-size: 46px;
     text-align: center;
+}
+
+@media screen and (max-width: 975px) {
+    
+    .wrapper {
+        max-width: var(--md);
+        padding-left: 32px;
+        padding-right: 32px;
+    }    
+    .title {
+        font-size: 86px;
+    }
+    .secondary_title {
+        font-size: 30px;
+    }
+
+    .banner .sign {
+        display: none;
+    }
+
+    .covers {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "title title title"
+        "cover1 cover2 cover3"
+        "cover4 cover5 cover6"
+        "cover7 empty empty"
+        "motto motto motto";
+    }
+
+    .story {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "title title title"
+        "optinal optinal optinal"
+        "photo1 photo2 photo3"
+        "photo4 photo5 photo6"
+        "photo7 photo8 empty"
+        "motto motto motto";
+    }
+
+    .sponsors {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px)  {
+    .wrapper {
+        max-width: var(--sm);
+        padding-left: 16px;
+        padding-right: 16px;
+    } 
+
+    .title {
+        font-size: 50px;
+    }
+    .ceo1 {
+        font-size: 30px;
+    } 
+    .footer a {
+        font-size: 30px;   
+    }
+    address {
+        font-size: 15px;
+    }
+
+    .covers {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "title title "
+        "cover1 cover2"
+        "cover3 cover4"
+        "cover5 cover6"
+        "cover7 empty"
+        "motto motto";
+    }
+
+    .story {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "title title "
+        "optinal optinal"
+        "photo1 photo2"
+        "photo3 photo4"
+        "photo5 photo6"
+        "photo7 photo8"
+        "motto motto";
+    }
+    .help_item {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+    .help_item button {
+        margin-top: -64px;
+    }
+    .sponsors {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nav {
+        flex-direction: column;
+        row-gap: 34px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ceo {
+        flex-direction: column;
+    }
+    .ceo > div {
+        width: 100%;
+    }
+    .banner .motto {
+        display: none;
+    }
+    .caption p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 415px)  {
+    .wrapper {
+        max-width: 415px;
+        padding-left: 10px;
+        padding-right: 10px;
+    } 
+    .covers {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title"
+        "cover1"
+        "cover2"
+        "cover3"
+        "cover4"
+        "cover5"
+        "cover6"
+        "cover7"
+        "motto";
+    }
+    .cover, 
+    .story > figure  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .motto {
+        text-align: center;
+    }
+
+    .story {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title "
+        "optinal"
+        "photo1"
+        "photo2"
+        "photo3"
+        "photo4"
+        "photo5"
+        "photo6"
+        "photo7"
+        "photo8"
+        "motto";
+    }
+    .help_item button {
+        margin-top: -90px;
+    }
 }

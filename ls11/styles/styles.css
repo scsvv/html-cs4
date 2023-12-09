@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Pacifico&family=Playfair+Display&family=Poppins:wght@400;700&display=swap');
+
+/*  * font-family: 'Libre Franklin', sans-serif;
+    * font-family: 'Pacifico', cursive;
+    * font-family: 'Playfair Display', serif;
+    * font-family: 'Poppins', sans-serif;
+*/
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --gray: #6C6C6C;
+    --grey: #F5F5F5;
+    --bordo: #AC1313;
+    --vine: #D77474;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+p {
+    font-family: 'Libre Franklin', sans-serif; 
+    font-size: inherit;
+    color: inherit;
+}
+a {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+button {
+    background-color: var(--bordo);
+    color: var(--white);
+    padding: 20px 24px 20px 40px;
+    border: none;
+    cursor: pointer;
+}
+.and {
+    color: var(--bordo);
+    font-family: Playfair Display;
+    font-size: 68px;
+}
+.logo {
+    color: var(--black);
+    font-family: 'Pacifico', cursive;
+    font-size: 33px;
+    line-height: 40px; 
+}
+.bold {
+    font-weight: 700;
+}
+.wrapper {
+    max-width: 1440px;
+    padding-left: 144px;
+    padding-right: 144px;
+}
+.section_title {
+    color: var(--vine);
+    text-transform: uppercase;   
+}
