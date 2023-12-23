@@ -153,6 +153,7 @@ header.header .content {
     justify-content: center;
     width: 512px;
     font-size: 14px;
+    z-index: 1;
 }
 header.header p {
     color: var(--gray);
@@ -193,6 +194,7 @@ main.main {
 }
 .categories {
    text-align: center; 
+   padding-bottom: 151px;
 }
 
 .categories_list {
@@ -224,17 +226,141 @@ main.main {
     width: 50%;
 }
 
+.gallery {
+    padding-top: 221px;
+    padding-bottom: 120px;
+    padding-right: 66px;
+
+}
+
+.gray-box {
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+.gallery h4 {
+    font-size: 24px;
+    margin-bottom: 23px;
+}
+
+.gallery_item {
+    display: flex;
+    gap: 86px;
+    position: relative;
+}
+.gallery_item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.gallery_item:not(:last-child) {
+    margin-bottom: 222px;
+}
+
+.gallery_item > div {
+    width: 50%;
+}
+
+.gallery a {
+    margin-top: 27px;
+    color: var(--black);
+}
+.image {
+    position: relative;
+}
+
+.vase {
+    position: absolute;
+    bottom: -100%;
+}
+
+.vase1 {
+    left: calc(50% - 125px);
+    bottom: -130%;
+}
+
+.vase2 {
+    left: calc(50% - 175px);
+}
+
+.collection {
+    padding-top: 121px;
+    text-align: center;
+}
+
+.goods {
+    padding-top: 53px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    row-gap: 21px;
+    padding-bottom: 61px;
+}
+
+.good-image {
+    width: 100%;
+    max-width: max-content;
+
+}
+.details {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: var(--black);
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.details h3 {
+    color: var(--gray);
+    font-family: 'Libre Franklin';
+    font-size: 16px;
+    margin: 0;
+}
+
+section.promo {
+    padding-bottom: 120px;
+    padding-top: 120px;
+    margin-bottom: 122px;
+
+    background-color: var(--gray);
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    background-position-x: left;
+    background-position-y: center;
+    background-repeat: no-repeat;
+
+}
+
+.promo .content {
+    max-width: 631px;
+    margin-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+}
+
+.promo h2 {
+    font-size: 36px;
+    margin-bottom: 13px;
+}
+.promo p {
+    margin-bottom: 30px;
+}
 
 
-
-
-
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 992px) {
 
     .wrapper {
-        max-width: 1060px;
+        max-width: 992px;
         padding-left: 100px;
         padding-right: 100px;
+    }
+    
+    .categories_list {
+        row-gap: 30px;
+    }
+    .categories_item {
+        width: 190px;
+        height: 190px;
     }
 
     .categories_description {
@@ -247,5 +373,46 @@ main.main {
 
     .categories_description > div {
         width: 100%;
+    }
+    .obj_img {
+        left: -314px;
+        
+    }
+
+    .vase {
+        width: 70%;
+        bottom: -10%;
+    }
+
+    .vase1 {
+        left: 14%;
+    }
+    
+    .vase2 {
+        left: 14%;
+    }
+    
+    .gallery_item > div {
+        width: 50%;
+    }
+    
+    .gallery_item > div.image {
+        width: 30%;
+    }
+    .gallery_item > div.text {
+        width: 70%;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .goods {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery_item:not(:last-child) {
+        margin-bottom: 102px;
     }
 }
