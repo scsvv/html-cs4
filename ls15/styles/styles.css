@@ -175,7 +175,7 @@ main .wrapper {
     grid-area: article8;
 }
 
-.subcribe {
+.subcribe.wrapper {
     background-color: var(--white);
     padding-top: 100px;
     padding-bottom: 100px;
@@ -214,4 +214,150 @@ main .wrapper {
     border-radius: 8px;
     border: 1px solid #E5E7EB;
     background: rgba(82, 80, 59, 0.02);
+}
+
+div.latest {
+    background-color: var(--gray);
+    padding-top: 115px;
+    padding-bottom: 100px;
+    color: var(--main);
+    text-align: center;
+}
+.news-item {
+    text-align: left;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 56px;
+}
+.news-item .text {
+    height: 100%;
+}
+
+.news-item img {
+    margin-right: 20px;
+} 
+
+.latest h2 {
+    font-family: 'Palatino';
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+.latest p {
+    font-size: 16px;
+    font-family: 'Georgia';
+    margin-bottom: 6px;
+}
+.latest span {
+    font-size: 11px;
+    font-family: 'Georgia';
+    margin-top: auto;
+}
+.view-archive {
+    width: fit-content;
+    background-color: #ffffff00;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.view-archive img {
+    margin-left: 3px;
+    margin-right: 5px;
+    width: fit-content;
+}
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer .wrapper > * {
+    margin-bottom: 20px;
+}
+
+.footer .wrapper > div > a {
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+        margin: 0 auto;
+        max-width: 900px;
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .wrapper {
+        margin: 0 auto;
+        max-width: 775px;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    main .wrapper {
+        padding: 30px;
+    }
+
+    .intro > .content {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        "article1 article1 article1 article1 article1 article1"
+        "article1 article1 article1 article1 article1 article1"
+        "article2 article2 article2 article3 article3 article3"
+        "article4 article4 article4 article5 article5 article5"
+        "article6 article6 article6 article6 article6 article6"
+        "article7 article7 article7 article8 article8 article8";
+    }
+
+    .news-item {
+        flex-direction: column;
+    } 
+    .news-item div.image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        margin: 0 auto;
+        max-width: 600px;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    main .wrapper {
+        padding: 20px;
+    }
+
+    .intro > .content {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "article1"
+        "article1"
+        "article2"
+        "article3"
+        "article4"
+        "article5"
+        "article6"
+        "article7"
+        "article8"
+        ;
+    }
+
+    .news-item {
+        flex-direction: column;
+    } 
+    .news-item div.image {
+        display: none;
+    }
 }
